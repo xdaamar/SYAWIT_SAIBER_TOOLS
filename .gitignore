@@ -1,0 +1,27 @@
+# --- Python / backend ---
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# --- Flutter / frontend ---
+frontend/build/
+frontend/.dart_tool/
+frontend/.flutter-plugins*
+frontend/windows/flutter/ephemeral/
+frontend/.idea/
+frontend/*.iml
+
+# --- Downloaded tools & runtime data ---
+backend/tools/
+backend/app/logs/
+backend/app/data/
+backend/.port
+
+# --- OS / editor ---
+Thumbs.db
+.DS_Store
+*.swp
+
+# --- Generated demo data ---
+scripts/demo_users.db
