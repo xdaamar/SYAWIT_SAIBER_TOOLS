@@ -1,0 +1,9 @@
+{
+  "python": { "min": "3.10", "note": "3.10+ dibutuhkan fastapi & pwntools modern" },
+  "pip": { "min": "23.0", "note": "resolver modern untuk requirements terkunci" },
+  "git": { "min": "2.30", "note": "untuk clone sqlmap; fallback unduh zip bila tidak ada" },
+  "nmap": { "min": "7.80", "note": "engine recon" },
+  "sqlmap": { "min": "1.8", "note": "dari repo GitHub resmi" },
+  "wsl": { "min": "0", "optional": true, "note": "opsional: menjalankan binary ELF target" },
+  "RsaCtfTool": { "min": "0", "optional": true, "note": "opsional: serangan RSA otomatis" }
+}
