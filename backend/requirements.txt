@@ -1,0 +1,14 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+httpx>=0.27
+beautifulsoup4>=4.12
+lxml>=5.0
+pydantic>=2.7
+packaging>=24.0
+psutil>=6.0
+pycryptodome>=3.20
+sympy>=1.12
+# pwntools TIDAK wajib: modul pwn punya implementasi fallback sendiri
+# (pattern, ELF parser, generator template). Skrip exploit yang dihasilkan
+# memang menargetkan pwntools di mesin lain. Install manual bila mau:
+#   pip install pwntools   (di Windows 3.14 bisa gagal karena 'unicorn')
