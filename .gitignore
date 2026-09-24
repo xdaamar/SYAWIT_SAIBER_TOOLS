@@ -25,3 +25,6 @@ Thumbs.db
 
 # --- Generated demo data ---
 scripts/demo_users.db
+
+# --- Tool lokal (Freebuff) ---
+.freebuff/
