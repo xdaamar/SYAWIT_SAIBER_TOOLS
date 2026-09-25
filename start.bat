@@ -1,5 +1,5 @@
 @echo off
-rem CTFSuite launcher — menjalankan aplikasi desktop Flutter.
+rem SYAWIT_SAIBER_TOOLS launcher — menjalankan aplikasi desktop Flutter.
 rem Backend FastAPI otomatis di-spawn oleh aplikasi (lihat frontend/lib/services/backend.dart).
 setlocal
 cd /d "%~dp0"
@@ -11,6 +11,6 @@ if errorlevel 1 (
     exit /b 1
 )
 
-echo [i] Menjalankan CTFSuite (flutter run -d windows)...
+echo [i] Menjalankan SYAWIT_SAIBER_TOOLS (flutter run -d windows)...
 flutter run -d windows
 endlocal

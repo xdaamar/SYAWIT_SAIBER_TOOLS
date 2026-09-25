@@ -81,8 +81,8 @@ async def test_login_bypass(url: str, username_field: str = "username",
     async with make_client(base_url="", cookies=cookies, headers=headers) as client:
         # baseline
         try:
-            baseline = await client.post(url, data={username_field: "ctfsuite_probe_x",
-                                                    password_field: "ctfsuite_probe_y",
+            baseline = await client.post(url, data={username_field: "syawit_probe_x",
+                                                    password_field: "syawit_probe_y",
                                                     **extra_fields})
         except Exception as e:
             return {"ok": False, "error": f"gagal menghubungi {url}: {e}"}

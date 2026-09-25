@@ -41,7 +41,7 @@ def summarize(rows: list[dict]) -> dict:
 def _markdown(rows: list[dict], meta: dict) -> str:
     s = summarize(rows)
     lines = [
-        f"# Laporan CTFSuite",
+        f"# Laporan SYAWIT_SAIBER_TOOLS",
         "",
         f"- Dibuat: {time.strftime('%Y-%m-%d %H:%M:%S')}",
         f"- Target: {meta.get('target', '(berbagai)')}",
@@ -79,12 +79,12 @@ def _html(rows: list[dict], meta: dict) -> str:
                 f"<td>{e(r['recommendation'])}</td></tr>")
 
     return f"""<!doctype html><html><head><meta charset="utf-8">
-<title>Laporan CTFSuite</title>
+<title>Laporan SYAWIT_SAIBER_TOOLS</title>
 <style>body{{font-family:Segoe UI,Roboto,sans-serif;background:#0f1115;color:#e6e6e6;margin:2rem}}
 h1{{color:#7ee787}} table{{border-collapse:collapse;width:100%;font-size:.9rem}}
 td,th{{border:1px solid #333;padding:.45rem .6rem;text-align:left;vertical-align:top}}
 tr:nth-child(even){{background:#181b21}} code{{color:#79c0ff}}</style></head><body>
-<h1>Laporan CTFSuite</h1>
+<h1>Laporan SYAWIT_SAIBER_TOOLS</h1>
 <p>Dibuat {time.strftime('%Y-%m-%d %H:%M:%S')} · Target {e(meta.get('target',''))} ·
 Total temuan <b>{s['total']}</b></p>
 <table><tr><th>Severity</th><th>Modul</th><th>Judul</th><th>URL</th><th>Bukti</th><th>Rekomendasi</th></tr>

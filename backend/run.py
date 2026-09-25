@@ -1,4 +1,4 @@
-"""CTFSuite backend launcher: uvicorn bound to 127.0.0.1."""
+"""SYAWIT_SAIBER_TOOLS backend launcher: uvicorn bound to 127.0.0.1."""
 from __future__ import annotations
 
 import sys

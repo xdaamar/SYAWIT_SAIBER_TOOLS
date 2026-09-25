@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
-/// Spawns and supervises the CTFSuite FastAPI backend.
+/// Spawns and supervises the SYAWIT_SAIBER_TOOLS FastAPI backend.
 class BackendService {
   BackendService._();
   static final BackendService instance = BackendService._();
@@ -40,7 +40,7 @@ class BackendService {
         venvPy.path,
         [runPy.path],
         workingDirectory: backendDir.path,
-        environment: {'CTFSUITE_PORT': '$port'},
+        environment: {'SYAWIT_PORT': '$port'},
         mode: ProcessStartMode.detachedWithStdio,
       );
       _proc!.stderr

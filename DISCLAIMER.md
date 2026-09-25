@@ -1,9 +1,9 @@
 # DISCLAIMER / PERNYATAAN PENAFIAN
 
-CTFSuite adalah alat bantu untuk **Capture The Flag (CTF)** dan **pengujian
+SYAWIT_SAIBER_TOOLS adalah alat bantu untuk **Capture The Flag (CTF)** dan **pengujian
 penetrasi yang sah (authorized pentesting)**.
 
-Dengan menggunakan CTFSuite, kamu menyatakan dan menyetujui bahwa:
+Dengan menggunakan SYAWIT_SAIBER_TOOLS, kamu menyatakan dan menyetujui bahwa:
 
 1. **Tujuan yang diizinkan** — tools ini hanya boleh dipakai terhadap sistem
    yang kamu **miliki**, atau sistem yang kamu punya **izin tertulis eksplisit**
@@ -15,7 +15,7 @@ Dengan menggunakan CTFSuite, kamu menyatakan dan menyetujui bahwa:
    UU ITE (Indonesia), Computer Fraud and Abuse Act (AS), dan hukum lain di
    yurisdiksimu. Segala konsekuensi hukum menjadi tanggung jawab pengguna.
 
-3. **Tanggung jawab pengguna** — pembuat CTFSuite tidak bertanggung jawab atas
+3. **Tanggung jawab pengguna** — pembuat SYAWIT_SAIBER_TOOLS tidak bertanggung jawab atas
    penyalahgunaan tools ini, kerusakan sistem, kebocoran data, atau konsekuensi
    hukum apa pun yang timbul dari penggunaan yang tidak sah.
 

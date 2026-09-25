@@ -14,7 +14,7 @@ def make_client(base_url: str = "", cookies: dict | None = None,
                 headers: dict | None = None) -> httpx.AsyncClient:
     s = config.load_settings()
     proxies = s.get("proxy") or None
-    all_headers = {"User-Agent": "CTFSuite/0.1 (+local pentest tool)"}
+    all_headers = {"User-Agent": "SYAWIT_SAIBER_TOOLS/0.1 (+local pentest tool)"}
     if headers:
         all_headers.update(headers)
     return httpx.AsyncClient(
@@ -62,4 +62,4 @@ def success_heuristics(baseline: httpx.Response, resp: httpx.Response) -> tuple[
     return False, "mirip baseline (gagal)"
 
 
-DEFAULT_UA = "CTFSuite/0.1"
+DEFAULT_UA = "SYAWIT_SAIBER_TOOLS/0.1"

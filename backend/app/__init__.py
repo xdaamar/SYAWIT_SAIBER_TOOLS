@@ -1,1 +1,1 @@
-"""CTFSuite backend package."""
+"""SYAWIT_SAIBER_TOOLS backend package."""

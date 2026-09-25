@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """demo_target.py — deliberately vulnerable LOCAL test target.
 
-CTFSuite demo aplikasi web rentan untuk menguji modul-modul secara end-to-end
+SYAWIT_SAIBER_TOOLS demo aplikasi web rentan untuk menguji modul-modul secara end-to-end
 di localhost. HANYA bind di 127.0.0.1. Jangan pernah expose ke jaringan.
 
 Jalankan:  python scripts/demo_target.py  (default http://127.0.0.1:5000)
@@ -19,7 +19,7 @@ from urllib.parse import parse_qsl, urlparse
 PORT = int(os.environ.get("DEMO_PORT", "5000"))
 DB_PATH = os.path.join(os.path.dirname(__file__), "demo_users.db")
 
-MARKER = "ctfsuite7f3a"
+MARKER = "syawit7f3a"
 
 
 def init_db() -> None:
@@ -35,7 +35,7 @@ def init_db() -> None:
     conn.close()
 
 
-PAGE = """<!doctype html><html><head><title>CTFSuite Demo Shop</title></head>
+PAGE = """<!doctype html><html><head><title>SYAWIT_SAIBER_TOOLS Demo Shop</title></head>
 <body><h1>Demo Shop (rentan — localhost only)</h1>
 <ul>
 <li><a href="/search?id=1">/search?id=1</a> — SQLi (error-based)</li>

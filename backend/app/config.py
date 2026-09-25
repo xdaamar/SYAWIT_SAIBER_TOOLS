@@ -1,4 +1,4 @@
-"""Central configuration & paths for the CTFSuite backend."""
+"""Central configuration & paths for the SYAWIT_SAIBER_TOOLS backend."""
 from __future__ import annotations
 
 import json
@@ -6,7 +6,7 @@ import os
 import threading
 from pathlib import Path
 
-APP_NAME = "CTFSuite"
+APP_NAME = "SYAWIT_SAIBER_TOOLS"
 VERSION = "0.1.0"
 
 
@@ -17,11 +17,11 @@ def _env_path(name: str, default: Path) -> Path:
 
 # --- Directory layout -------------------------------------------------------
 # config.py lives in <repo>/backend/app/
-BACKEND_DIR = _env_path("CTFSUITE_BACKEND_DIR", Path(__file__).resolve().parent.parent)
+BACKEND_DIR = _env_path("SYAWIT_BACKEND_DIR", Path(__file__).resolve().parent.parent)
 APP_DIR = BACKEND_DIR / "app"
-TOOLS_DIR = _env_path("CTFSUITE_TOOLS_DIR", BACKEND_DIR / "tools")
-LOGS_DIR = _env_path("CTFSUITE_LOGS_DIR", APP_DIR / "logs")
-DATA_DIR = _env_path("CTFSUITE_DATA_DIR", APP_DIR / "data")
+TOOLS_DIR = _env_path("SYAWIT_TOOLS_DIR", BACKEND_DIR / "tools")
+LOGS_DIR = _env_path("SYAWIT_LOGS_DIR", APP_DIR / "logs")
+DATA_DIR = _env_path("SYAWIT_DATA_DIR", APP_DIR / "data")
 SQLMAP_DIR = TOOLS_DIR / "sqlmap"
 RSACTFTOOL_DIR = TOOLS_DIR / "RsaCtfTool"
 WORDLISTS_DIR = TOOLS_DIR / "wordlists"
@@ -37,7 +37,7 @@ NMAP_ELEVATED_SCRIPT = SCRIPTS_DIR / "setup_admin_nmap.ps1"
 
 def _appdata_dir() -> Path:
     base = (
-        os.environ.get("CTFSUITE_APPDATA_DIR")
+        os.environ.get("SYAWIT_APPDATA_DIR")
         or os.environ.get("APPDATA")
         or str(Path.home())
     )
@@ -109,7 +109,7 @@ def save_settings(update: dict) -> dict:
 
 # --- Server -----------------------------------------------------------------
 HOST = "127.0.0.1"
-PORT = int(os.environ.get("CTFSUITE_PORT", "8765"))
+PORT = int(os.environ.get("SYAWIT_PORT", "8765"))
 
 
 def api_base() -> str:

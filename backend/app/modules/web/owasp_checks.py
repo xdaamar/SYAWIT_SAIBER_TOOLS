@@ -8,7 +8,7 @@ from urllib.parse import urljoin, urlparse
 
 from .http_client import make_client
 
-MARKER = "ctfsuite7f3a"
+MARKER = "syawit7f3a"
 
 SECURITY_HEADERS = [
     "strict-transport-security", "content-security-policy",

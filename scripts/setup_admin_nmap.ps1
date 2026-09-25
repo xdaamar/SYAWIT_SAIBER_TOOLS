@@ -1,4 +1,4 @@
-# CTFSuite — manual nmap installer (run as Administrator)
+# SYAWIT_SAIBER_TOOLS — manual nmap installer (run as Administrator)
 # Use this only if the in-app Smart Setup (winget path) failed.
 #
 # Usage (PowerShell as Admin):
@@ -6,7 +6,7 @@
 #   .\scripts\setup_admin_nmap.ps1
 
 $ErrorActionPreference = 'Stop'
-Write-Host '=== CTFSuite: nmap installer ==='
+Write-Host '=== SYAWIT_SAIBER_TOOLS: nmap installer ==='
 
 # 1) Try winget first
 $winget = Get-Command winget -ErrorAction SilentlyContinue

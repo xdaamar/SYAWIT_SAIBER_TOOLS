@@ -8,8 +8,8 @@ from ..web.http_client import make_client
 COMMON_PARAMS = ["cmd", "c", "command", "exec", "shell", "x", "0"]
 
 PROBE_MARKERS = {
-    "unix": ("echo CTFSUITE_PROBE_9f3a", "CTFSUITE_PROBE_9f3a"),
-    "windows": ("echo CTFSUITE_PROBE_9f3a", "CTFSUITE_PROBE_9f3a"),
+    "unix": ("echo SYAWIT_PROBE_9f3a", "SYAWIT_PROBE_9f3a"),
+    "windows": ("echo SYAWIT_PROBE_9f3a", "SYAWIT_PROBE_9f3a"),
 }
 
 

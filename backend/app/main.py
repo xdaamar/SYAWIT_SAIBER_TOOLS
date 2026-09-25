@@ -1,4 +1,4 @@
-"""CTFSuite backend application."""
+"""SYAWIT_SAIBER_TOOLS backend application."""
 from __future__ import annotations
 
 from contextlib import asynccontextmanager
@@ -20,7 +20,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="CTFSuite Backend", version=config.VERSION, lifespan=lifespan)
+app = FastAPI(title="SYAWIT_SAIBER_TOOLS Backend", version=config.VERSION, lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
